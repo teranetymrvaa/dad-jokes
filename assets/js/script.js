@@ -12,11 +12,13 @@ let jokes=[
     "My boss told me to have a good day. So I went home...",
     "."
 ]
-let count=0
+// let count=0
 jokeBtn.addEventListener("click",function () {
-    joketext.textContent=jokes[count]
-    count++
-    if (count >= jokes.length) {
-        count = 0; 
-    }
+    // joketext.textContent=jokes[count]
+    // count++
+    // if (count >= jokes.length) {
+    //     count = 0; 
+    // }
+    let randomIndex = Math.floor(Math.random() * jokes.length);
+    joketext.textContent = jokes[randomIndex];
 })
